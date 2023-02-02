@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «sport»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Верстка «sport»</h1>
+		<div class="rootpage__info">
+			Интернет магазин
+		</div>
+		<h2>Готовые страницы:</h2>
+		<class="rootpage__list">
+			<li><a target="_blank" href="home.html">Главная</a></li>
+			<li><a target="_blank" href="catalog.html">Каталог</a></li>
+			<li><a target="_blank" href="product.html">Товар</a></li>
+			<li><a target="_blank" href="cart.html">Корзина</a></li>
+			</ol>
+			<!-- 			<h2>Попапы:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html#"></a></li>
+			</ol> -->
+			<div class="rootpage__grid">
+				<div class="rootpage__tnx">
+					<h2>Спасибо за заказ!</h2>
+					<p>Буду рад хорошему отзыву.</p>
+					<p>Обращайтесь еще!</p>
+				</div>
+				<div class="rootpage__contacts">
+					<h2>Мои контакты:</h2>
+					<p>Телефон: <a href="tel:89284197193">8 928-419-7193</a></p>
+					<p>Почта: <a href="mailto:viacheslaverstka@rambler.ru">viacheslaverstka@rambler.ru</a></p>
+				</div>
+			</div>
+	</div>
+</body>
+<style>
+	/* 
+		$color1 :#e9e9e9; // текст
+		$color2 :#55bff0; // ссылки
+		$color3 :#898B89; // прсмотренные ссылки
+		$color4 :#415168; // задний фон блоков
+		$color5 :#20334C; // фон
+		$color6 :#4c99cc; // заголовки
+		
+	*/
+	@charset "UTF-8";
+	@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap);
+
+	a {
+		color: inherit;
+	}
+
+	a:link,
+	a:visited {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: inherit;
+		font-size: inherit;
+	}
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #e9e9e9;
+		background-color: #20334C;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #55bff0;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #898B89;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+		align-items: flex-start;
+	}
+
+	h1 {
+		color: #4c99cc;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	h2 {
+		color: #4c99cc;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	.rootpage__contacts {
+		background: #415168;
+	}
+
+	.rootpage__contacts a {
+		color: #4c99cc;
+	}
+
+	.rootpage__tnx {
+		background: #415168;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	.rootpage__grid {
+		display: -ms-grid;
+		display: grid;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+</style>
+
+</html>
